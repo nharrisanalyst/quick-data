@@ -1,4 +1,5 @@
 import React, { useState, FormEvent } from 'react';
+import './dataUpload.scss';
 
 
 const DataUpload =() =>{
@@ -15,7 +16,7 @@ const DataUpload =() =>{
         </>
     )
     return(
-    <div data-testid="data-uploader">
+    <div className='data-uploader' data-testid="data-uploader">
         <label htmlFor="data-input" > Upload Your Data (csv or JSON):</label>
         <input id="data-input" type="file" accept="text/csv, application/json" aria-label="data-input" onChange={onUpload}/>
 
