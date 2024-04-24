@@ -31,8 +31,8 @@ describe("test for <DataUpload/>", ()=>{
         })
         const uploadedMessage = screen.getByText('Your data has been Uploaded');
         
-        expect(dataInput.files[0].name).toBe('hello.csv');
-        expect(dataInput.files[0]).toBe(fakeCSV);
+        expect(dataInput.files![0].name).toBe('hello.csv');
+        expect(dataInput.files![0]).toBe(fakeCSV);
         expect(uploadedMessage).toBeInTheDocument(); //this test that the state has changed
         
 
