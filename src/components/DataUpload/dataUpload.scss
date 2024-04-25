@@ -1,3 +1,29 @@
 .data-uploader{
-    color:blue;
+   
+    border-radius: 5px;
+    border: solid 2px darkgrey;
+    .data-uploader-form{
+        display:inline-block;
+        align-items: center;
+        text-align: center;
+        width:100%;
+        margin:40px;
+
+        label{
+            display: block;
+            text-align: center;
+            width:100%;
+            padding-bottom:2px;
+
+        }
+        input{
+            display:block;
+            text-align: center;
+            width:100%;
+        }
+    }
+}
+.data-uploaded-message{
+    width:100%;
+    text-align: center;
 }
