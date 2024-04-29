@@ -7,6 +7,14 @@ const DataUpload =() =>{
 
     const onUpload = (event:FormEvent<HTMLInputElement> ) =>{
         //console.log('this is really here to be')
+    //     const reader = new FileReader();
+    //     const file:File = (event.target as HTMLInputElement).files![0];
+    //     console.log('this is the event', (event.target as HTMLInputElement).files![0])
+    //     reader.readAsText(file)
+    //     reader.onload = function(e) {  
+    //         const bfile = e.target.result; 
+    //         alert(bfile);   // this shows bfile
+    //       }
         setDataUploaded(true);
     }
 
