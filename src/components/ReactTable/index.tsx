@@ -4,7 +4,7 @@ import { Column } from 'primereact/column';
 import { createColumns } from './utils'
 
 type ReactTableProps =  {
-    data:Array<Object>;
+    data?:Array<Object>;
 }
 
 const ReactTable = ({data=[]}:ReactTableProps) =>{
