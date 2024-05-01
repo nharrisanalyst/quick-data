@@ -3,12 +3,14 @@ import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { createColumns } from './utils'
 
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+import 'primereact/resources/primereact.min.css';
+
 type ReactTableProps =  {
     data?:Array<Object>;
 }
 
 const ReactTable = ({data=[]}:ReactTableProps) =>{
-    console.log('this is the main place', data);
     const COLUMNS = data.length>0?createColumns(data[0]):[];
    
    return (
