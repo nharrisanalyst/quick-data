@@ -23,7 +23,6 @@ describe("test for <DataUpload/>", ()=>{
         const user = userEvent.setup()
         render(<DataUpload />)
         const fakeCSV = new File(['example'], 'hello.csv', {type: 'text/csv'})
-        console.log('this is our fake data',fakeCSV.type)
         const dataInput = screen.getByLabelText(/Upload Your Data/i) as HTMLInputElement;
         
         await act( async() => {
