@@ -1,7 +1,7 @@
 import {screen,render} from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 import userEvent from '@testing-library/user-event'
-import QuickData from './';
+import QuickData from '.';
 
 //stops the production of an erroneous error
 const originalConsoleError = console.error;
