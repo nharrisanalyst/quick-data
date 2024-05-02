@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import DataUpload from '../components/DataUpload';
-import ReactTable from '../components/ReactTable';
+import DataUpload from '../../components/DataUpload';
+import ReactTable from '../../components/ReactTable';
 
 import './quickdata.scss';
 
