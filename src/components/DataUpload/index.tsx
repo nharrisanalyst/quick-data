@@ -3,7 +3,7 @@ import { convertCSVToJSON } from './utils/convertCSVToJSON';
 import './dataUpload.scss';
 
 type dataUploadProps ={
-    onDataUploaded: (data:Array<any>)=>void    
+    onDataUploaded?: (data:Array<any>)=>void    
 }
 
 const defaultonDataUpLoaded =(data:Array<any>):void =>{}; //this is just a blank function so that this componet is not to coupled with the parent component
