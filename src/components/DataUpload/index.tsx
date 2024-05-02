@@ -24,9 +24,10 @@ const DataUpload =({onDataUploaded = defaultonDataUpLoaded}:dataUploadProps) =>{
             const bfile = e.target?.result as string; 
              const fileAsJSON = await convertCSVToJSON(bfile);
              onDataUploaded( fileAsJSON );   // this shows bfile
+             setDataUploaded(true);
            }
 
-        setDataUploaded(true);
+        
     }
 
     const formSent = (

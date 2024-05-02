@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import DataUpload from '../components/DataUpload';
 import ReactTable from '../components/ReactTable';
 
+import './quickdata.scss';
+
 const QuickData = () =>{
     const [tableData, setTableData] = useState<Array<any>>([])
     const [dataSet,setDataSet] = useState<boolean>(false); 
@@ -12,7 +14,7 @@ const QuickData = () =>{
     return(
     <div className='quick-data-cont' data-testid="quick-data-test-id">
         <DataUpload onDataUploaded={onDataUploaded}/>
-        {dataSet?(<ReactTable data={tableData} />):(<h3>Upload Data To See The Data Table</h3>)}
+        {dataSet?(<ReactTable data={tableData} />):(<div><h3>Upload Data To See The Data Table</h3></div>)}
     </div>
     )
 }
