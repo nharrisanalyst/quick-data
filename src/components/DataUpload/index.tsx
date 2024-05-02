@@ -16,7 +16,7 @@ const DataUpload =({onDataUploaded = defaultonDataUpLoaded}:dataUploadProps) =>{
         
         const reader = new FileReader();
         const file:File = (event.target as HTMLInputElement).files![0];
-        const fileType:string =(event.target as HTMLInputElement).files![0].type;
+        // const fileType:string =(event.target as HTMLInputElement).files![0].type;
         
         reader.readAsText(file)
         
